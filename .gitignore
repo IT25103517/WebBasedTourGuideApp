@@ -1,0 +1,16 @@
+# build output (the jar alone is 23.8 MB, and SETUP.bat rebuilds it)
+backend/target/
+
+# secrets - setup.ps1 generates this file with a random JWT secret on each laptop
+backend/.env
+backend/.env.backup
+
+# installed packages - npm install recreates them
+frontend/node_modules/
+frontend/dist/
+backend/_node_backup/node_modules/
+
+# editor files
+.idea/
+.vscode/
+*.log
